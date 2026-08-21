@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Tawsil</string>
+    <string name="tagline">توصيل سريع وموثوق</string>
+
+    <!-- Auth -->
+    <string name="login">تسجيل الدخول</string>
+    <string name="register">إنشاء حساب</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="full_name">الاسم الكامل</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="no_account">ما عندكش حساب؟ سجل توا</string>
+    <string name="have_account">عندك حساب؟ سجل الدخول</string>
+    <string name="choose_role">شكون إنت؟</string>
+    <string name="role_client">عميل</string>
+    <string name="role_livreur">موصل (Livreur)</string>
+
+    <!-- Client -->
+    <string name="my_orders">طلباتي</string>
+    <string name="new_order">طلب جديد</string>
+    <string name="pickup_address">عنوان الاستلام</string>
+    <string name="drop_address">عنوان التوصيل</string>
+    <string name="order_description">وصف الطلب</string>
+    <string name="price">السعر (د.ت)</string>
+    <string name="submit_order">إرسال الطلب</string>
+
+    <!-- Livreur -->
+    <string name="available_orders">طلبات متاحة</string>
+    <string name="my_deliveries">توصيلاتي</string>
+    <string name="accept_order">قبول الطلب</string>
+
+    <!-- Admin -->
+    <string name="admin_dashboard">لوحة تحكم الأدمن</string>
+    <string name="all_orders">كل الطلبات</string>
+    <string name="all_users">كل المستخدمين</string>
+
+    <!-- Order status -->
+    <string name="status_pending">في الانتظار</string>
+    <string name="status_accepted">تم القبول</string>
+    <string name="status_picked_up">تم الاستلام</string>
+    <string name="status_delivered">تم التوصيل</string>
+    <string name="status_cancelled">ملغى</string>
+
+    <string name="logout">خروج</string>
+</resources>

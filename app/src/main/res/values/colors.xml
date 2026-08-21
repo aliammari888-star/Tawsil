@@ -1,0 +1,15 @@
+<resources>
+    <color name="primary">#1E88E5</color>
+    <color name="primary_dark">#1565C0</color>
+    <color name="accent">#FF9800</color>
+    <color name="background">#F5F6FA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_dark">#212121</color>
+    <color name="text_gray">#757575</color>
+
+    <color name="status_pending">#FFA000</color>
+    <color name="status_accepted">#1E88E5</color>
+    <color name="status_picked_up">#8E24AA</color>
+    <color name="status_delivered">#43A047</color>
+    <color name="status_cancelled">#E53935</color>
+</resources>

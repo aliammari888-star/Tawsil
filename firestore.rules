@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function myRole() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+
+    // كل مستخدم يقرا ويعدل بروفايلو فقط، والأدمن يقرا/يعدل الكل
+    match /users/{userId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn() && request.auth.uid == userId;
+      allow update: if isSignedIn() && (request.auth.uid == userId || myRole() == 'admin');
+      allow delete: if isSignedIn() && myRole() == 'admin';
+    }
+
+    // الطلبات: العميل يقرا/ينشئ طلباتو، الموصل يقرا الطلبات المتاحة وطلباتو، الأدمن يقرا/يعدل الكل
+    match /orders/{orderId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn() && request.resource.data.clientId == request.auth.uid;
+      allow update: if isSignedIn() && (
+          myRole() == 'admin' ||
+          resource.data.clientId == request.auth.uid ||
+          myRole() == 'livreur'
+      );
+      allow delete: if isSignedIn() && myRole() == 'admin';
+    }
+  }
+}
