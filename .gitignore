@@ -9,4 +9,3 @@
 .cxx
 local.properties
 # ملف مفاتيح Firebase الحقيقي، لا يُرفع لأي مستودع عام
-app/google-services.json

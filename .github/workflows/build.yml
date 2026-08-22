@@ -18,12 +18,6 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Write google-services.json
-        run: |
-          cat > app/google-services.json << 'GSEOF'
-          ${{ secrets.GOOGLE_SERVICES_JSON }}
-          GSEOF
-
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 

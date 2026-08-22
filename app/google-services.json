@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "666526893298",
+    "project_id": "tawsil-90b86",
+    "storage_bucket": "tawsil-90b86.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666526893298:android:d8959b5a95de42f73f7c6b",
+        "android_client_info": {
+          "package_name": "com.tawsil.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6TJvAmgNj0zPMrXKAyd8jl-Qqugo1b-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
