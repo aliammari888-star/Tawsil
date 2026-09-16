@@ -1,0 +1,6 @@
+{
+  "name": "Tawsil",
+  "description": "تطبيق توصيل سريع وموثوق للعملاء وموصلي الطلبات مع إدارة كاملة للطلبات والمستخدمين",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
